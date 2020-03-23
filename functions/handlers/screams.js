@@ -155,7 +155,7 @@ exports.unlikeScream = (req, res) => {
         })
         .then(data => {
             if (data.empty) {
-                return res.status(400).json({ error: 'Scream already liked' });
+                return res.status(400).json({ error: 'Scream already unliked' });
             } else {
                 //Means dont have a like
                 return db.doc(`/likes/${data.docs[0].id}`).delete()
