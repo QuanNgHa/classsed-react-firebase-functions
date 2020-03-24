@@ -14,6 +14,7 @@ let db = {
     screams: [
         {
             userHandle: 'user',
+            userImage: '',
             body: 'This is the scream body',
             createdAt: '2020-03-19T14:54:29.657Z',
             likeCount: 5,
